@@ -1,0 +1,36 @@
+{
+  "name": "kujira.js",
+  "description": "JS Interface for the Kujira Blockchain",
+  "version": "0.8.1",
+  "license": "MIT",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "ibc": "node ibc.mjs",
+    "contracts": "node contracts.mjs"
+  },
+  "dependencies": {
+    "@cosmjs/cosmwasm-stargate": "^0.29.4",
+    "@cosmjs/launchpad": "^0.27.1",
+    "@cosmjs/stargate": "^0.29.4",
+    "@ethersproject/bignumber": "^5.7.0",
+    "@injectivelabs/chain-api": "^1.9.9",
+    "@keplr-wallet/types": "^0.11.12",
+    "@types/google-protobuf": "^3.15.6",
+    "cosmjs-types": "0.5.2",
+    "long": "^4.0.0",
+    "text-encoding": "^0.7.0",
+    "ts-node": "^10.9.1",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@3.3.0"
+}
